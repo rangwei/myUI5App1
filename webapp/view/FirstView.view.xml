@@ -1,0 +1,57 @@
+<mvc:View controllerName="com.myorg.myUI5App1.controller.FirstView" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout" 
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel>
+		<content>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<Label text="Label A (required)" labelFor="input-a"/>
+					<Input id="input-a" required="true"/>
+					<Label text="Label B (bold)" labelFor="input-b" design="Bold" />
+					<Input id="input-b"/>
+					<Label text="Label C (normal)" labelFor="input-c"/>
+					<Input id="input-c"/>
+					<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
+					<Label text="Label D" labelFor="vbox"/>
+					<VBox id="vbox" binding="{/ProductCollection}" class="sapUiSmallMargin">
+						<RadioButton groupName="GroupA" text="Option 1" selected="true" />
+						<RadioButton groupName="GroupA" text="Option 2" />
+						<RadioButton groupName="GroupA" text="Option 3" />
+						<RadioButton groupName="GroupA" text="Option 4" />
+						<RadioButton groupName="GroupA" text="Option 5" />
+					</VBox>
+					<VBox class="sapUiSmallMargin">
+						<Text text="An example with 'matrix' layout" textAlign="Center"/>
+						<RadioButtonGroup columns="3" width="100%" class="sapUiMediumMarginBottom">
+							<buttons>
+								<RadioButton id="RB1-1" text="Long Option Number 1"/>
+								<RadioButton id="RB1-2" text="Option 2" enabled="false"/>
+								<RadioButton id="RB1-3" text="Nr. 3" editable="false"/>
+								<RadioButton id="RB1-4" text="Long Option 4"/>
+								<RadioButton id="RB1-5" text="Option 5"/>
+								<RadioButton id="RB1-6" text="Nr. 6"/>
+							</buttons>
+						</RadioButtonGroup>
+						<Text text="An example with 3 buttons and 2 columns"/>
+						<RadioButtonGroup columns="2" selectedIndex="2" class="sapUiMediumMarginBottom">
+							<buttons>
+								<RadioButton id="RB2-1" text="Option 1"/>
+								<RadioButton id="RB2-2" text="Option 2" editable="false"/>
+								<RadioButton id="RB2-3" text="Option 3"/>
+							</buttons>
+						</RadioButtonGroup>
+					</VBox>
+					<l:VerticalLayout class="sapUiContentPadding">
+						<Label text="Rating Indicator default size" labelFor="RI_default"/>
+						<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" value="4" tooltip="Rating Tooltip" />
+						<Label text="Rating Indicator with size L" labelFor="RI_L"/>
+						<RatingIndicator id="RI_L" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="32px" tooltip="Rating Tooltip" />
+						
+					</l:VerticalLayout>
+					<Button text="Say Hello" press=".onShowHello"/>
+				</l:content>
+			</l:VerticalLayout>
+		</content>
+	</Panel>
+</mvc:View> 

@@ -1,0 +1,8 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "myUI5App1",
+    "namespace": "com.myorg",
+    "viewtype": "XML",
+    "viewname": "MainView"
+  }
+}
