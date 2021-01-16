@@ -6,9 +6,9 @@
 		<content>
 			<l:VerticalLayout class="sapUiContentPadding" width="100%">
 				<l:content>
-					<Label text="Label A (required)" labelFor="input-a"/>
+					<Label text="Label A1 Master (required)" labelFor="input-a"/>
 					<Input id="input-a" required="true"/>
-					<Label text="Label B (bold)" labelFor="input-b" design="Bold" />
+					<Label text="Label B (bold) Master" labelFor="input-b" design="Bold" />
 					<Input id="input-b"/>
 					<Label text="Label C (normal)" labelFor="input-c"/>
 					<Input id="input-c"/>
@@ -25,7 +25,7 @@
 						<Text text="An example with 'matrix' layout" textAlign="Center"/>
 						<RadioButtonGroup columns="3" width="100%" class="sapUiMediumMarginBottom">
 							<buttons>
-								<RadioButton id="RB1-1" text="Long Option Number 1"/>
+								<RadioButton id="RB1-1" text="Long Number 1"/>
 								<RadioButton id="RB1-2" text="Option 2" enabled="false"/>
 								<RadioButton id="RB1-3" text="Nr. 3" editable="false"/>
 								<RadioButton id="RB1-4" text="Long Option 4"/>
